@@ -1,0 +1,289 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: 'Josefin Sans', sans-serif;
+  text-shadow: 1px 1px 2px;
+   }
+body {
+  background: #e6e6ff;
+   }
+form {
+  font-size: 1.2em;
+  color:#b3b3b3;
+}
+.wrapper h1 {
+  background: #33334d;
+  color:white;
+  width: 100%;
+  padding: 27px 0;
+  font-size: 1.5em;
+  margin-top: 0;
+  margin-bottom: 30px;
+}
+.wrapper h1,
+.header {
+  text-align: center;
+}
+legend,
+.header h2 {
+  font-size: 1.6em;
+  color: #000066;
+  }
+  .header h2{
+    margin-bottom: 0;
+  }
+.header p {
+  font-size: 1.3em;
+  color:#b3b3b3;
+  margin-top: 10px;
+  margin-bottom: 35px;
+}
+.header {
+  border-bottom: 5px solid #33334d;
+  margin-bottom: 3px;
+  }
+.header,
+form {
+  padding-left: 5%;
+  padding-right: 5%;
+}
+fieldset {
+    border: none;
+}
+
+
+
+/*       FIRST FIELDSET                    */
+
+
+fieldset:first-child legend {
+  padding-top: 25px;
+  padding-bottom: 15px;
+  font-size: 1.4em;
+      }
+fieldset:first-child label {
+    padding: 0;
+    margin:0;
+   }
+fieldset:first-child input,
+fieldset:first-child select {
+    margin-top: 7px;
+}
+input,
+select {
+  display: block;
+  }
+input::placeholder {
+  text-align: right;
+  text-transform: capitalize;
+  display: block;
+  padding-right: 20px;
+  font-style: italic;
+
+}
+form {
+  padding-bottom: 30px;
+  border-top: solid 2px #33334d;
+}
+ form label {
+ padding-bottom: 6px;
+  font-size: 1em;
+  }
+input[type="text"],
+input[type="tel"],
+input[type="email"],
+#state {
+  background: #e0e0eb;
+  width: 100%;
+  padding-top: 23px;
+  padding-bottom: 23px;
+  margin-bottom: 15px;
+  border-radius: 6%;
+  border:none;
+  font-size: 1em;
+}
+select {
+  color:#b3b3b3;
+}
+fieldset:first-child {
+    border-bottom: 2px solid #000066;
+    padding-bottom: 20px;
+}
+
+/*   ******************* TRANSITIONS ***********************  */
+
+input,
+select,
+textarea {
+  transition: background-color 1s ease-in-out 500ms;
+  -webkit-transition: background-color 1s ease-in-out 500ms;
+}
+input:focus,
+select:focus,
+textarea:focus {
+   border: 2px solid rgba(70,105,140, .9);
+   box-shadow: 0 0 4px 1px rgba(70,105,140,.9);
+   background: #e6e6ff;
+}
+
+
+  /*        SECOND FIELDSET           */
+
+
+fieldset:nth-child(2) legend {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: 30px;
+    padding-bottom: 20px;
+}
+label:last-of-type {
+    padding-top: 18px;
+    padding-bottom: 0;
+}
+label:nth-child(13){
+    padding-top: 10px;
+}
+fieldset:last-child label {
+    display: inline-block;
+    margin: 5px auto;
+}
+#HTML,
+#CSS,
+#Javascript,
+#HTMLNews,
+#Plain_text {
+  display: inline-block;
+}
+textarea {
+  background: #e0ebeb;
+  width: 100%;
+  height: 120px;
+  border: none;
+  border-radius: 2%;
+  margin-top: 15px;
+}
+footer {
+  padding-bottom: 250px;
+  text-align: center;
+  color: #94b8b8;
+  font-size: 1.2em;
+  font-weight: 300;
+}
+ button {
+  color: white;
+  font-size: 1.1em;
+  background: #47d1d1;
+  text-align: center;
+  width: 100%;
+  border-radius: 5%;
+  padding: 25px 60px;
+  border: none;
+  margin-top: 30px;
+}
+button:hover {
+    cursor: pointer;
+}
+ul li {
+    list-style-type: none;
+}
+                 /* *********************************************
+                         HTML5 FORM VALIDATION
+
+                         ****************************************/
+
+
+
+input:invalid {
+  border: none;
+}
+
+input:valid {
+  border: none;
+}
+
+
+          /* ***********************************************************
+                            @MEDIA QUERIES
+
+              **********************************************************/
+
+@media screen and (min-width: 768px) {
+
+    form {
+       padding-left: 20%;
+       padding-right: 0;
+    }
+    #state {
+      width: 60%;
+    }
+
+    #zip_code {
+      width: 30%;
+    }
+
+    fieldset:first-child label {
+        width: 35%;
+        float: left;
+    }
+    fieldset:first-child input {
+     width: 65%;
+    }
+
+
+        /*    ********** PARALEL BORDERS REDUCTION  **************/
+
+    form {
+        border-top: none;
+     }
+    .header {
+        border-bottom: none;
+    }
+    .border-bottom {
+        border-top: solid 2px #33334d;
+        margin-top: 3px;
+    }
+    .border-top {
+        border-top: solid 5px #33334d;
+    }
+
+                 /**********************************************
+                      STYLING ALL OVER IN M.QUERIES
+
+                ***************************************/
+    .wrapper {
+        font-weight: 700;
+    }
+    form {
+        width: 80%;
+    }
+    .header h2 {
+        font-size: 2.1em;
+        text-align: center;
+  }
+    .header {
+       width: 100%;
+        padding-top: 50px;
+    }
+    .header p {
+        font-weight: 500;
+    }
+    fieldset:first-child legend {
+        padding-top: 60px;
+        padding-bottom: 5px;
+        font-weight: 600;
+    }
+    legend {
+        font-size: 1.4em;
+    }
+    fieldset ul li {
+        display: block;
+        margin-bottom: 23px;
+    }
+    fieldset:first-child label {
+        margin-top:18px;
+    }
+    fieldset:first-child {
+       padding-bottom: 50px;
+}
+}
